@@ -3,8 +3,11 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 const connect = async () => {
+  const uri =
+    process.env.URI ||
+    "mongodb+srv://araxx:root@slabcodetechnicaltest.36tl8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
   await mongoose
-    .connect(process.env.URI, {
+    .connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
