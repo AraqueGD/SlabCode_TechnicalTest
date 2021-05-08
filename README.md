@@ -8,7 +8,7 @@
 
 ## Create Event
 
-![CreateEvent](resorces/create.png)
+![CreateEvent](resources/create.png)
 
 Route where we can create our event, with the fields next:
 
@@ -22,7 +22,7 @@ Route where we can create our event, with the fields next:
 
 ## Edit Event
 
-![EditEvent](resources/edit.png)
+![EditEvent](resources/edit.PNG)
 
 Route where we can edit our event
 
