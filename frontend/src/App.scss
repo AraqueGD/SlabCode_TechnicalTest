@@ -1,0 +1,61 @@
+body {
+  background: linear-gradient(to right, mediumpurple, lightsalmon);
+}
+
+.title {
+  text-align: center;
+  color: #000;
+}
+
+.calendar {
+  width: 100%;
+  max-width: 600px;
+  margin: 1em auto;
+  padding: 0.5rem 0;
+
+  &__info {
+    display: flex;
+    align-items: center;
+    padding: 0 2em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+
+  &__prev,
+  &__next {
+    color: greenyellow;
+  }
+
+  &__prev {
+    margin-right: auto;
+  }
+  &__next {
+    margin-left: auto;
+  }
+
+  &__week,
+  &__dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    cursor: pointer;
+  }
+
+  &__month,
+  &__year {
+    padding: 0.5rem 0.5em;
+  }
+
+  &__item {
+    text-align: center;
+    line-height: 3;
+  }
+
+  &__today {
+    background: lightcoral;
+    color: white;
+    width: 50%;
+    border-radius: 50%;
+    margin: auto;
+  }
+}
